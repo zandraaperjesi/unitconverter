@@ -29,4 +29,9 @@ public class UnitConverterTest {
     public void testExchangeFromDecilitreToMicrolitre() {
         Assert.assertEquals("Conversion was incorrect", 15200000, unitConverterUnderTest.convertFromTo(152, "dl", "µl"), 0.001);
     }
+
+    @Test
+    public void testExchangeFromDecagramToKilogram() {
+        Assert.assertEquals("Conversion was incorrect", 5.46, unitConverterUnderTest.convertFromTo(546, "dag", "kg"), 0.001);
+    }
 }
