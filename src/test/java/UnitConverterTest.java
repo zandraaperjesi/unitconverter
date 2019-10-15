@@ -11,6 +11,11 @@ public class UnitConverterTest {
     }
 
     @Test
+    public void testExchangeFromCentimeterToDecimeter() {
+        Assert.assertEquals("Conversion was incorrect", 1.0, unitConverterUnderTest.convertFromTo(100, "cm", "dm"), 0.001);
+    }
+
+    @Test
     public void testExchangeFromMillimeterToKilometer() {
         Assert.assertEquals("Conversion was incorrect", 0.05372, unitConverterUnderTest.convertFromTo(53720, "mm", "km"), 0.001);
     }
